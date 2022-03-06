@@ -35,6 +35,9 @@ function setupWeppons () {
 function tofpx (n: number) {
     return (n * fpx_scale) | 0
 }
+/**
+ * Ver: A1.0
+ */
 let Weppons_Ids: number[] = []
 let Weppons: string[] = []
 let Weppons_Images: Image[] = []
@@ -47,8 +50,8 @@ let CrossHeir = sprites.create(assets.image`CrossHeir`, SpriteKind.Icon)
 CrossHeir.setPosition(scene.screenWidth() / 2, scene.screenHeight() / 2)
 WepponSprite = sprites.create(assets.image`Fist`, SpriteKind.Icon)
 WepponSprite.setPosition(131, 94)
-scene.setBackgroundImage(assets.image`Area2`)
-let map = assets.image`MainMap2`
+scene.setBackgroundImage(assets.image`Area1`)
+let map = assets.image`MainMap1`
 game.splash("Level 1", "The Garden")
 let textures = [
 img`
